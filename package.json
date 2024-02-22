@@ -1,0 +1,16 @@
+{
+  "name": "repo-base-boilerplate",
+  "description": "Boilerplate for creating a new repository",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Thiago Lins <falecom@thiagolins.dev.br>",
+  "license": "MIT",
+  "scripts": {
+    "push:patch": "npm version patch && git push",
+    "push:minor": "npm version minor && git push",
+    "push:major": "npm version major && git push",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
+  }
+
+}
